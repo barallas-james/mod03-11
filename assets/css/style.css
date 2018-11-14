@@ -1,0 +1,188 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+.nav{
+	background-color: #7D2624;
+	height: 100%;
+	width:200px;
+	position: fixed;
+	
+
+}
+
+ul > li{ /*ul that has an li child*/
+	list-style: none;
+	background-color: #010005;
+	margin-bottom: 2px;
+	line-height: 48px; /*default font size is 16px. 16 * 3 = 48px*/
+	text-align: center;
+	border-radius: 12px;
+
+}
+
+ul > li > a{ /*ul that has an li child that has an a child*/
+	text-decoration: none; /*to remove underline in achor tag*/
+	color: #D8E1E8;
+}
+
+ul > li:hover{ 
+	background-color: #D8E1E8;
+	color: #010005;
+	opacity: 0.7;
+}
+
+ul > li:hover > a{
+	color: #010005;
+	opacity: 0.7
+}
+
+.main{
+	background-color: lightgrey;
+	margin-left: 200px;
+
+}
+
+.banner{
+	background-image: url("https://static1.squarespace.com/static/577545261b631bb1e1bf4c63/5776cbd220099ea4c166c3b0/5776ccf720099ea4c166ce5c/1467657469746/berrics-overview.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+
+}
+
+.box{
+	background-color: #7D2624;
+
+	border: 9px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*x and y values*/  
+	border-radius: 12px;
+
+}
+
+.about{
+	background-color: #D6D5C9;
+	min-height: 100vh; 
+
+}
+
+.services{
+	background-color: #B9BAA3;
+	min-height: 100vh;
+
+
+}
+
+.projects{
+	background-color: #D6D5C9;
+	min-height: 100vh;
+
+
+}
+
+.gallery{
+	background-color: #B9BAA3;
+	min-height: 100vh;
+
+
+}
+
+.footer{
+	background-color: #0A100D;
+	min-height: 30px;
+	color: white;
+	
+	text-align: center;
+
+}
+
+/*grouping selector*/
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer{
+	padding: 30px;
+}
+
+.logo{
+	height: 140px;
+	width: 140px;
+	background-color: darkgrey;
+	margin: 0 auto;
+	border-radius: 12px;
+	border: 5px solid grey;
+}
+
+.column{
+	border: 1px solid black;
+	width: 31%;
+	margin-top: 1.6%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+}
+
+img[alt*="park"]{
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	display: block; /*to be sure the image is display:block*/
+	
+	text-align: center;
+
+}
+
+img[alt*="park"]~p{
+	overflow: hidden;
+}
+
+
+.gallery > .column{
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+img[alt*="skater"]{
+	width: 100%; 	
+	height: 340px;
+	display: block;
+	border: 1px solid black;
+
+}
+
+.icons{
+
+	font-size: 60px;
+}
+
+.icons > a:visited{
+	color: white;
+}
+
+.clear:after{
+	content: " ";
+	clear: both;
+	display: block;
+
+}
+
