@@ -340,6 +340,16 @@ img[alt*="skater"]{
 		color: white;
 	}
 
+	img[alt*="skater"]{
+	width: 70%; 	
+	height: 70%;
+	display: block;
+	border: 1px solid black;
+	text-align: center;
+
+	
+	}
+
 
 
 }
