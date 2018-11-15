@@ -7,6 +7,7 @@
 
 html{
 	scroll-behavior: smooth;
+
 }
 
 
@@ -15,8 +16,6 @@ html{
 	height: 100%;
 	width:200px;
 	position: fixed;
-	
-
 }
 
 ul > li{ /*ul that has an li child*/
@@ -45,14 +44,19 @@ ul > li:hover > a{
 	opacity: 0.7
 }
 
+
+
+
+
 .main{
 	background-color: lightgrey;
 	margin-left: 200px;
+	width: 100%;
 
 }
 
 .banner{
-	background-image: url("https://static1.squarespace.com/static/577545261b631bb1e1bf4c63/5776cbd220099ea4c166c3b0/5776ccf720099ea4c166ce5c/1467657469746/berrics-overview.png");
+	background-image: url("https://skatelite.com/wp-content/uploads/2013/05/the-berrics.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -78,6 +82,7 @@ ul > li:hover > a{
 
 .about{
 	background-color: #D6D5C9;
+	width: 100%;
 	min-height: 100vh; 
 
 }
@@ -103,14 +108,44 @@ ul > li:hover > a{
 
 }
 
+.feedback{
+	background-color: #D6D5C9;
+	min-height: 100vh;
+	position: relative;
+
+
+}
+
 .footer{
 	background-color: #0A100D;
 	min-height: 30px;
 	color: white;
 	
 	text-align: center;
-
 }
+
+form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	background-color: rgb(255,255,255,0.75);
+	padding: 30px;
+	border-radius: 10px;
+	color: black;
+	
+}
+
+input[name=name]{
+	width: 100%;
+}
+
+textarea{
+	width: 300px;
+	height: auto;
+}
+
 
 /*grouping selector*/
 .nav,
@@ -186,3 +221,137 @@ img[alt*="skater"]{
 
 }
 
+
+
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px){
+	body{
+		background-color: #F09A9D;
+		
+		max-width: 400px;
+	}
+
+	.nav{
+		display: none;
+	}
+
+	.main{
+	background-color: lightgrey;
+	margin: 0 auto;
+
+	}
+
+	.gallery > .column{
+		width: 100%;
+		margin: 1%;
+	
+	}
+
+	.column{
+		border: 1px solid black;
+		width: 96%;
+		margin: 1%;
+		float: left;
+	}
+
+	.box{
+		background-color: #7D2624;
+
+		border: 9px solid white;
+		text-align: center;
+		width: 60%;
+		padding: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%); /*x and y values*/  
+		border-radius: 12px;
+
+	}
+
+
+	.icons{
+
+		font-size: 30px;
+	}
+
+	.icons > a:visited{
+		color: white;
+	}
+
+
+
+}
+
+/*Table Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	body{
+		background-color: #F5CF8E;
+		min-width: 401px;
+		max-width: 960px;
+	}
+
+	.nav{
+		display: none;
+	}
+
+	.main{
+		background-color: lightgrey;
+		margin: 0 auto;
+
+	}
+
+	.gallery > .column{
+		width: 100%;
+		margin: 1%;
+	
+	}
+
+	.column{
+		border: 1px solid black;
+		width: 96%;
+		margin: 1%;
+		float: left;
+	}
+
+	.box{
+		background-color: #7D2624;
+
+		border: 9px solid white;
+		text-align: center;
+		width: 60%;
+		padding: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%); /*x and y values*/  
+		border-radius: 12px;
+
+	}
+
+	.icons{
+
+		font-size: 30px;
+	}
+
+	.icons > a:visited{
+		color: white;
+	}
+
+
+
+}
+
+/*Table Styles*/
+@media only screen and (min-width: 961px){
+	body{
+		background-color: #B2D6FF;
+		min-width: 961px;
+	}
+
+
+
+
+
+}
