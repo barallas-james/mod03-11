@@ -51,7 +51,7 @@ ul > li:hover > a{
 .main{
 	background-color: lightgrey;
 	margin-left: 200px;
-	width: 100%;
+	
 
 }
 
@@ -65,9 +65,10 @@ ul > li:hover > a{
 
 }
 
+
+
 .box{
 	background-color: #7D2624;
-
 	border: 9px solid white;
 	text-align: center;
 	width: 40%;
